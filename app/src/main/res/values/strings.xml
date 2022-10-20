@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">The Post</string>
+    <string name="splash_name">The <br />P st</string>
+    <string name="label_title">Title</string>
+    <string name="label_body">Body</string>
+    <string name="label_replies">Comments</string>
+    <string name="label_posts">Posts</string>
+    <string name="label_detailed">Post Detail</string>
+</resources>

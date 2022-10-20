@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+        <variable
+            name="comment"
+            type="com.zekierciyas.thepost.domain.Comment" />
+    </data>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/dimen_page_margin">
+
+
+        <TextView
+            android:id="@+id/tvUserName"
+            style="@style/Medium"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginVertical="@dimen/dimen_page_margin_half"
+            android:layout_marginHorizontal="@dimen/dimen_page_margin_half"
+            android:text="@{comment.name}"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:text="Name Surname" />
+
+        <TextView
+            android:id="@+id/tvCommentBody"
+            style="@style/Regular"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginVertical="@dimen/dimen_page_margin_half"
+            android:layout_marginHorizontal="@dimen/dimen_page_margin_half"
+            android:text="@{comment.body}"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tvUserName"
+            tools:text="Body bla bla" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>
