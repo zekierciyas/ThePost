@@ -1,7 +1,6 @@
 # The Post
 
-It is a data fetcher application written in MVVM architecture. The Buy application offers offline cache by keeping the data it receives from the service in the Room Database. Picasso was used for uploading the photos. Glide can also be used.
-
+A sample application that presents the listing of current posts from the API, with up-to-date libraries and dependencies, and clean architecture principles.
 
 ### Api Service
 ```
